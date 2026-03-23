@@ -26,7 +26,11 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Player"))
         {
-            Debug.Log("Game Over!");
+            ScoreManager sm = FindObjectOfType<ScoreManager>();
+            if (sm != null)
+            {
+                sm.GameOver();
+            }
             gameObject.SetActive(false);
         }
         else
