@@ -32,18 +32,18 @@ public class Projectile : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            PlayerController player = other.GetComponent<PlayerController>();
-            if (player != null)
-                player.TakeDamage(damage);
+            Health hp = other.GetComponent<Health>();
+            if (hp != null)
+                hp.TakeDamage(damage);
 
             Destroy(gameObject);
         }
 
         if (other.CompareTag("Enemy"))
         {
-            EnemyController enemy = other.GetComponent<EnemyController>();
-            if (enemy != null)
-                enemy.TakeDamage(damage);
+            Health hp = other.GetComponent<Health>();
+            if (hp != null)
+                hp.TakeDamage(damage);
 
             Destroy(gameObject);
         }

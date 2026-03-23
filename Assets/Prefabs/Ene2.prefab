@@ -458,6 +458,7 @@ GameObject:
   - component: {fileID: 1958636912376615465}
   - component: {fileID: 4366643447702124322}
   - component: {fileID: 6997431353527579885}
+  - component: {fileID: -7013286538291946819}
   m_Layer: 0
   m_Name: Ene2
   m_TagString: Enemy
@@ -517,7 +518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 15
-  maxHP: 20
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 5158124216324618496}
   fireRate: 1
@@ -571,6 +571,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7013286538291946819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924426606436047932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e4e310ed6ca9546bd1b16e2127c2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHp: 20
+  currentHp: 20
 --- !u!1 &2165214618461395859
 GameObject:
   m_ObjectHideFlags: 0

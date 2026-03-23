@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 3045891733431476184}
   - component: {fileID: 1197376518371255067}
   - component: {fileID: 8420769833503195472}
+  - component: {fileID: -6588025644080304852}
   m_Layer: 0
   m_Name: Daddy
   m_TagString: Enemy
@@ -171,7 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 12
-  maxHP: 10
   projectilePrefab: {fileID: 0}
   firePoint: {fileID: 0}
   fireRate: 2
@@ -225,6 +225,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6588025644080304852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277576569308297256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e4e310ed6ca9546bd1b16e2127c2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHp: 20
+  currentHp: 20
 --- !u!1 &307529265199492092
 GameObject:
   m_ObjectHideFlags: 0

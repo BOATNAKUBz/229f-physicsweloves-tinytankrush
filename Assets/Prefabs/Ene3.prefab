@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1632083264699132481}
   - component: {fileID: 7669802538138703073}
   - component: {fileID: 270011378363413951}
+  - component: {fileID: 4467313900698395341}
   m_Layer: 0
   m_Name: Ene3
   m_TagString: Enemy
@@ -124,7 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 12
-  maxHP: 20
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 5545263250135172594}
   fireRate: 2
@@ -145,7 +145,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -178,6 +178,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4467313900698395341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264252213655016578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e4e310ed6ca9546bd1b16e2127c2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHp: 20
+  currentHp: 20
 --- !u!1 &264252213655016580
 GameObject:
   m_ObjectHideFlags: 0

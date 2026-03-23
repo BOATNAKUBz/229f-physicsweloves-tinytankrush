@@ -5,8 +5,7 @@ public class EnemyController : MonoBehaviour
     public float speed = 3f;
 
     [Header("HP")]
-    public int maxHP = 50;
-    private int currentHP;
+
 
     [Header("Shooting")]
     public GameObject projectilePrefab;
@@ -18,10 +17,6 @@ public class EnemyController : MonoBehaviour
     public float bulletSpeed = 10f;
     public int bulletDamage = 5;
 
-    void Start()
-    {
-        currentHP = maxHP;
-    }
 
     void Update()
     {
@@ -53,13 +48,4 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHP -= damage;
-
-        if (currentHP <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
 }
