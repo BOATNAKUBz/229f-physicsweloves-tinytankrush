@@ -585,6 +585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 20
   currentHp: 20
+  scoreValue: 15
 --- !u!1 &2165214618461395859
 GameObject:
   m_ObjectHideFlags: 0

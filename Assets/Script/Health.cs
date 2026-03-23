@@ -4,6 +4,7 @@ public class Health : MonoBehaviour
 {
     public float maxHp = 100f;
     public float currentHp;
+    public int scoreValue = 10;
 
     void Start()
     {
@@ -30,7 +31,12 @@ public class Health : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            ScoreManager sm = FindObjectOfType<ScoreManager>();
+            if (sm != null)
+            {
+                sm.AddScore(scoreValue);
+            }
+                Destroy(gameObject);
         }
     }
 

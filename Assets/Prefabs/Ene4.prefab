@@ -869,3 +869,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHp: 20
   currentHp: 20
+  scoreValue: 30
