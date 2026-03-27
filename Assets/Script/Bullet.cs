@@ -5,6 +5,8 @@ public class Projectile : MonoBehaviour
     public float speed;
     public int damage;
     public float lifeTime = 3f;
+    public AudioClip hitSound;
+    private AudioSource audioSource;
 
     public string ownerTag;
 
@@ -12,6 +14,10 @@ public class Projectile : MonoBehaviour
 
      public ParticleSystem hitEffect;
 
+    void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     public void Init(float _speed, int _damage, string _ownerTag, Vector3 shootDir)
     {
@@ -48,11 +54,21 @@ public class Projectile : MonoBehaviour
             if (hp != null)
                 hp.TakeDamage(damage);
 
-            Destroy(gameObject);
+            // 🔊 เล่นเสียงตอนโดน
+            if (hitSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(hitSound);
+            }
 
-            ParticleSystem effect = Instantiate(hitEffect, other.transform.position, Quaternion.identity);
+            // 💥 เอฟเฟค
+            if (hitEffect != null)
+            {
+                ParticleSystem effect = Instantiate(hitEffect, other.transform.position, Quaternion.identity);
+                effect.Play();
+            }
 
-            effect.Play();
+            // ❗ หน่วงนิดให้เสียงทันเล่น
+            Destroy(gameObject, 0.2f);
         }
     }
 }

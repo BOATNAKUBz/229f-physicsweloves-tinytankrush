@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ff330f6226d1d44838ee63a8824f8def, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1155,6 +1155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
   dirtParticle: {fileID: 0}
   hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
@@ -1322,6 +1324,103 @@ MonoBehaviour:
   currentHp: 10
   scoreValue: 10
   deadEffect: {fileID: 0}
+--- !u!82 &943688215
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943688208}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 0a0f2887fa97dd44a8ff3a2860d369f4, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,6 +2175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
   dirtParticle: {fileID: 0}
   hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
@@ -2270,6 +2371,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4767851782556882711, guid: bce01724092736e45917885a17480f8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 943688214}
+    - targetCorrespondingSourceObject: {fileID: 4767851782556882711, guid: bce01724092736e45917885a17480f8b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 943688215}
     - targetCorrespondingSourceObject: {fileID: 3501266431167849550, guid: bce01724092736e45917885a17480f8b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1924799782}
@@ -2628,6 +2732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  audioSource: {fileID: 0}
+  shootSound: {fileID: 0}
   dirtParticle: {fileID: 0}
   hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}

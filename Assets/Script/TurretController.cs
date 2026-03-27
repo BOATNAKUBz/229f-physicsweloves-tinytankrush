@@ -6,6 +6,9 @@ public class TurretController : MonoBehaviour
     public float rotationSpeed = 100f;
     public float maxAngle = 90f;
 
+    public AudioSource audioSource;
+    public AudioClip shootSound;
+
     private float currentRotation = 0f;
 
     private InputAction moveAction;
@@ -53,6 +56,7 @@ public class TurretController : MonoBehaviour
     {
         if (shootAction.triggered)
         {
+            audioSource.PlayOneShot(shootSound);
             GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
             Vector3 shootDir = firePoint.forward;
