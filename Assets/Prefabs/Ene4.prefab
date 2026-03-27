@@ -276,6 +276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  dirtParticle: {fileID: 0}
+  hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 5246464392317107185}
   bulletSpeed: 15
@@ -625,6 +627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  dirtParticle: {fileID: 0}
+  hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 5246464392317107185}
   bulletSpeed: 15
@@ -870,3 +874,4 @@ MonoBehaviour:
   maxHp: 20
   currentHp: 20
   scoreValue: 30
+  deadEffect: {fileID: 2433282508523890284, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}

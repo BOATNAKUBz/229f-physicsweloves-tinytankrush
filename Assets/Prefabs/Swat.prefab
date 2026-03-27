@@ -2432,6 +2432,7 @@ GameObject:
   - component: {fileID: 6380644818693060565}
   - component: {fileID: 8289460979014424467}
   - component: {fileID: -6134354622882010509}
+  - component: {fileID: 17179166709294644}
   m_Layer: 0
   m_Name: Swat
   m_TagString: Enemy
@@ -2485,7 +2486,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8779667668498113355}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b808ac7713830547a8bb0bb1f04a1d4, type: 3}
   m_Name: 
@@ -2559,6 +2560,22 @@ MonoBehaviour:
   maxHp: 20
   currentHp: 20
   scoreValue: 5
+  deadEffect: {fileID: 5515065002404772068, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
+--- !u!114 &17179166709294644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779667668498113355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274687f4a3864734ba41834df96cffd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyWalk
+  moveSpeed: 18
+  damageToPlayer: 20
+  stopDistance: 0.3
 --- !u!1 &8796599308904169488
 GameObject:
   m_ObjectHideFlags: 0

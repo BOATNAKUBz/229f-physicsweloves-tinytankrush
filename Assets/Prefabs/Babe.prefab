@@ -2021,6 +2021,7 @@ GameObject:
   - component: {fileID: 3188029654224697856}
   - component: {fileID: 3421380087248693782}
   - component: {fileID: 273713260784170570}
+  - component: {fileID: -7786110942704321201}
   m_Layer: 0
   m_Name: Babe
   m_TagString: Enemy
@@ -2074,13 +2075,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3649897444638456488}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b808ac7713830547a8bb0bb1f04a1d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 12
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 0}
   fireRate: 2
   bulletSpeed: 10
@@ -2148,6 +2149,22 @@ MonoBehaviour:
   maxHp: 20
   currentHp: 20
   scoreValue: 5
+  deadEffect: {fileID: 5515065002404772068, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
+--- !u!114 &-7786110942704321201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649897444638456488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274687f4a3864734ba41834df96cffd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyWalk
+  moveSpeed: 20
+  damageToPlayer: 20
+  stopDistance: 0.3
 --- !u!1 &3865772550196532848
 GameObject:
   m_ObjectHideFlags: 0

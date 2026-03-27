@@ -10,6 +10,9 @@ public class Projectile : MonoBehaviour
 
     private Vector3 direction;
 
+     public ParticleSystem hitEffect;
+
+
     public void Init(float _speed, int _damage, string _ownerTag, Vector3 shootDir)
     {
         speed = _speed;
@@ -46,6 +49,10 @@ public class Projectile : MonoBehaviour
                 hp.TakeDamage(damage);
 
             Destroy(gameObject);
+
+            ParticleSystem effect = Instantiate(hitEffect, other.transform.position, Quaternion.identity);
+
+            effect.Play();
         }
     }
 }

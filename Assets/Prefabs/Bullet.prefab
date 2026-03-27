@@ -130,6 +130,7 @@ MonoBehaviour:
   damage: 10
   lifeTime: 3
   ownerTag: 
+  hitEffect: {fileID: 8194992990867289333, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
 --- !u!54 &-4451489685384681896
 Rigidbody:
   m_ObjectHideFlags: 0

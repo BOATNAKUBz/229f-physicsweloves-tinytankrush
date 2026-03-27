@@ -282,6 +282,7 @@ MonoBehaviour:
   maxHp: 20
   currentHp: 20
   scoreValue: 40
+  deadEffect: {fileID: 2433282508523890284, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
 --- !u!1 &766239916887181257
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,7 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2644337808326283952}
   m_Layer: 0
-  m_Name: Fire Point (1)
+  m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1197376518371255067}
   - component: {fileID: 8420769833503195472}
   - component: {fileID: -6588025644080304852}
+  - component: {fileID: -4048387213847940525}
   m_Layer: 0
   m_Name: Daddy
   m_TagString: Enemy
@@ -166,7 +167,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277576569308297256}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b808ac7713830547a8bb0bb1f04a1d4, type: 3}
   m_Name: 
@@ -240,6 +241,22 @@ MonoBehaviour:
   maxHp: 20
   currentHp: 20
   scoreValue: 5
+  deadEffect: {fileID: 5515065002404772068, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
+--- !u!114 &-4048387213847940525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277576569308297256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274687f4a3864734ba41834df96cffd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyWalk
+  moveSpeed: 15
+  damageToPlayer: 20
+  stopDistance: 0.3
 --- !u!1 &307529265199492092
 GameObject:
   m_ObjectHideFlags: 0

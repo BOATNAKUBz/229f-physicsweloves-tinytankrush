@@ -5,10 +5,17 @@ public class Health : MonoBehaviour
     public float maxHp = 100f;
     public float currentHp;
     public int scoreValue = 10;
+    public ParticleSystem deadEffect;
+    private ScoreManager scoreManager;
+
+
 
     void Start()
     {
         currentHp = maxHp;
+
+        
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     public void TakeDamage(float dmg)
@@ -26,21 +33,17 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Player"))
         {
-            ScoreManager sm = FindObjectOfType<ScoreManager>();
-            if (sm != null)
-            {
-                sm.GameOver();
-            }
+            if (scoreManager != null)
+                scoreManager.GameOver();
+
             gameObject.SetActive(false);
         }
         else
         {
-            ScoreManager sm = FindObjectOfType<ScoreManager>();
-            if (sm != null)
-            {
-                sm.AddScore(scoreValue);
-            }
-                Destroy(gameObject);
+            if (scoreManager != null)
+                scoreManager.AddScore(scoreValue);
+            Instantiate(deadEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 

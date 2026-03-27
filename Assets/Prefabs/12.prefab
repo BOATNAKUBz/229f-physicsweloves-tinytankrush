@@ -233,7 +233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 10
-  maxHP: 50
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 6095883197289224714}
   fireRate: 2
@@ -387,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6095883197289224714}
   m_Layer: 0
-  m_Name: Fire Point (2)
+  m_Name: Fire Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private InputAction moveAction;
 
+
     private void Awake()
     {
         moveAction = InputSystem.actions.FindAction("Move");

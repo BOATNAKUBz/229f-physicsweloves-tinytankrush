@@ -1155,6 +1155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  dirtParticle: {fileID: 0}
+  hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 1200025359}
   bulletSpeed: 15
@@ -1302,7 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06732678919b58943a8d12f83385065e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 0
+  speed: 5
   xRange: 10
 --- !u!114 &943688214
 MonoBehaviour:
@@ -1316,9 +1318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49e4e310ed6ca9546bd1b16e2127c2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  maxHp: 10
+  maxHp: 200
   currentHp: 10
   scoreValue: 10
+  deadEffect: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,7 +1895,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d6d3dd63f238d3c4a97bacf326721157, type: 2}
+  - {fileID: 2100000, guid: 588b88a71e887fd43be013c0d6e79971, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2073,6 +2076,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  dirtParticle: {fileID: 0}
+  hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 1200025359}
   bulletSpeed: 15
@@ -2362,7 +2367,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d6d3dd63f238d3c4a97bacf326721157, type: 2}
+  - {fileID: 2100000, guid: 588b88a71e887fd43be013c0d6e79971, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2623,6 +2628,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretController
   rotationSpeed: 100
   maxAngle: 90
+  dirtParticle: {fileID: 0}
+  hitEffect: {fileID: 0}
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 469670672}
   bulletSpeed: 15

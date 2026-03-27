@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
 
     void MoveForward()
     {
-        // 🔥 เดินถอยหลังแทน
+      
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
@@ -38,7 +38,7 @@ public class EnemyController : MonoBehaviour
         {
             GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
-            // 🔥 ยิงย้อนจาก firePoint
+            
             Vector3 shootDir = firePoint.forward;
 
             Projectile proj = bullet.GetComponent<Projectile>();
