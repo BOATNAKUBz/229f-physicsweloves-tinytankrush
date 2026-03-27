@@ -424,14 +424,14 @@ RectTransform:
   m_GameObject: {fileID: 807512162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5816, y: 3.5816, z: 3.5816}
+  m_LocalScale: {x: 4.2370324, y: 3.5816, z: 3.5816}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1470637692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 522, y: -1989}
+  m_AnchoredPosition: {x: 522, y: -2425}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807512164
@@ -676,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.0305538, y: -43.622406}
+  m_AnchoredPosition: {x: -28.4, y: -43.622406}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470637693
@@ -712,16 +712,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "=== CREDITS ===\n\nProject: Tiny Tank Crush\n\n-------------------------\nTeam
-    Members\n-------------------------\n\n1670701166 Keerati Jumnongpon  No.6 (229F)\n1670704418
-    Natthaphon Suebthin  No.27 (229F)\n\n\nUnity Assets& Resources\n-------------------------\n-
-    Skybox: Copel Free Skybox Pack \n- 3D Models: JMGO Assets, Kucher \n- Additional
-    Assets: ithappy, T90, ZombieSoft\n- Materials & Prefabs: Unity Built-in / Custom\n\n\n-------------------------\nAnimation
-    & AI\n-------------------------\n- 3D Model / Animation: Meshy AI\n- Sound Effects
-    (Gunshot): Suno AI\n\n-------------------------\nTools\n-------------------------\n-
-    Unity Engine\n\n------------------------\nSpecial Thanks\n-------------------------\n-
-    Bangkok University (BUITI)\n\n\n\n\n\n\n\n\n-------------------------\nThank
-    you for playing!\n"
+  m_text: "=== CREDITS ===\n\nProject: TinyTankRush\n\n-------------------------\nTeam
+    Members\n-------------------------\n\n1670701166 Keerati Jumnongpon  No.6 (229F)\n-
+    UI (HP bar and score system)\n- Added shooting sound effect\n- Start menu and
+    end credit scene\n- Tank model setup and skin\n- Animation (movement)\n- Environment
+    design (in-game)\n\n1670704418 Natthaphon Suebthin  No.27 (229F)\n\n\n-------------------------\nAssets
+    & Resources\n-------------------------\n- Skybox: Copel Free Skybox Pack \n-
+    3D Models: JMGO Assets, Kucher \n- Additional Assets: ithappy, T90, ZombieSoft\n-
+    Materials & Prefabs: Unity Built-in / Custom\n\n-------------------------\nAnimation
+    & AI\n-------------------------\n- Used Meshy AI for 3D model and animation\n-
+    Used Suno AI for gunshot sound effects\n\n-------------------------\nTools\n-------------------------\n-
+    Unity Engine\n\n-------------------------\nSpecial Thanks\n-------------------------\n-
+    Instructor\n- Bangkok University (BUITI)\n\n\n\n\n\n\n\n\n\n-------------------------\nThank
+    you for playing!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
