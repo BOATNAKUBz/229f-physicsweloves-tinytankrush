@@ -14,6 +14,7 @@ public class TurretController : MonoBehaviour
     private InputAction moveAction;
     private InputAction shootAction;
 
+    [Header("Effects")]
     public ParticleSystem dirtParticle;
     public ParticleSystem hitEffect;
 
@@ -25,6 +26,10 @@ public class TurretController : MonoBehaviour
     public float bulletSpeed = 15f;
     public int bulletDamage = 10;
 
+    [Header("Cooldown")]
+    public float fireRate = 0.3f;   // เวลาที่ต้องรอก่อนยิงครั้งต่อไป
+    private float fireTimer = 0f;   // ตัวจับเวลา
+
     void Awake()
     {
         moveAction = InputSystem.actions.FindAction("Move");
@@ -35,12 +40,14 @@ public class TurretController : MonoBehaviour
     {
         RotateTurret();
         Shoot();
+
+        // เพิ่มเวลาเสมอ
+        fireTimer += Time.deltaTime;
     }
 
     void RotateTurret()
     {
         float verticalInput = moveAction.ReadValue<Vector2>().y;
-
         float rotation = verticalInput * rotationSpeed * Time.deltaTime;
 
         float newRotation = currentRotation + rotation;
@@ -54,11 +61,18 @@ public class TurretController : MonoBehaviour
 
     void Shoot()
     {
+       
+        if (fireTimer < fireRate)
+            return;
+
+        
         if (shootAction.triggered)
         {
-            audioSource.PlayOneShot(shootSound);
-            GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+            fireTimer = 0f;  // รีเซ็ตคูลดาวน์
 
+            audioSource.PlayOneShot(shootSound);
+
+            GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
             Vector3 shootDir = firePoint.forward;
 
             Projectile proj = bullet.GetComponent<Projectile>();

@@ -131,6 +131,8 @@ MonoBehaviour:
   lifeTime: 3
   hitSound: {fileID: 8300000, guid: 0a0f2887fa97dd44a8ff3a2860d369f4, type: 3}
   ownerTag: 
+  angularVelocity: {x: 0, y: 5, z: 0}
+  magnusStrength: 0.2
   hitEffect: {fileID: 8194992990867289333, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
 --- !u!54 &-4451489685384681896
 Rigidbody:

@@ -518,11 +518,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   speed: 15
+  damageToPlayer: 20
   projectilePrefab: {fileID: 5403770220058969730, guid: f4964071f36ad46479349e17cc27884f, type: 3}
   firePoint: {fileID: 5158124216324618496}
   fireRate: 1
   bulletSpeed: 30
   bulletDamage: 10
+  hitEffect: {fileID: 4271093393614929224, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
 --- !u!65 &4366643447702124322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -538,12 +540,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.007759, y: 4.660641, z: 7}
-  m_Center: {x: 0.23376083, y: 1.3303206, z: -1.6999998}
+  m_Size: {x: 4, y: 3, z: 8}
+  m_Center: {x: 0.23376083, y: 1.3303206, z: -1}
 --- !u!54 &6997431353527579885
 Rigidbody:
   m_ObjectHideFlags: 0
