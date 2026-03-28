@@ -4322,7 +4322,7 @@ MonoBehaviour:
   firePoint: {fileID: 1200025359}
   bulletSpeed: 15
   bulletDamage: 10
-  fireRate: 0.5
+  fireRate: 0.2
 --- !u!65 &1266515960
 BoxCollider:
   m_ObjectHideFlags: 0
